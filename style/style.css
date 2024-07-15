@@ -109,21 +109,37 @@ main > section{
 }
 
 /* fact style here */
-.fact{
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fact-card{
     max-width: 241.83px;
     height: 241.83px;
-    box-sizing: border-box;
     border: 1px solid rgb(255, 144, 14);
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
+    text-align: center;
 }
-.fact img{
-    max-width: 45px;
-    height: 45px;
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600; 
+    margin-top: 10px;
+}
+.fact-description{
+    margin-top: 10px;
+    width: 560px;
+    font-size: 1rem;
+}
+#some{
+    margin-bottom: 20px;
 }
   /* media query */
   @media screen and (max-width:576px) {
